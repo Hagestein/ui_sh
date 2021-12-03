@@ -1,0 +1,184 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* delivery_dhlp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-13 10:04+0000\n"
+"PO-Revision-Date: 2018-09-13 10:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/utils.py:281
+#, python-format
+msgid "Cannot get the receiver/shipper address details."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/utils.py:222
+#: code:addons/delivery_dhlp/utils.py:297
+#, python-format
+msgid "Cannot get the receiver/shipper data."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:309
+#, python-format
+msgid "Cannot get the shipping label. Please try again later.\n"
+"If the problem persists, contact support."
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model,name:delivery_dhlp.model_delivery_carrier
+msgid "Carrier"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model,name:delivery_dhlp.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:delivery.carrier,name:delivery_dhlp.delivery_carrier_dhlp
+msgid "DHL Parcel"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_base_url
+msgid "DHL Parcel API Base URL"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_api_key
+msgid "DHL Parcel API Key"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_api_userid
+msgid "DHL Parcel API UserID"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_acc_id
+msgid "DHL Parcel Account ID"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_acc_name
+msgid "DHL Parcel Account Name"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.ui.view,arch_db:delivery_dhlp.delivery_carrier_form_provider_dhlp
+msgid "DHL Parcel Configuration"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:product.product,name:delivery_dhlp.product_product_delivery_dhlp
+#: model:product.template,name:delivery_dhlp.product_product_delivery_dhlp_product_template
+msgid "DHL Parcel Product"
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:89
+#, python-format
+msgid "DHL Parcel tokens are not valid. Please try again later.\n"
+"If the problem persists, contact support."
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_api_access_token
+msgid "Dhlp Api Access Token"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_api_access_token_exp
+msgid "Dhlp Api Access Token Exp"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_api_refresh_token
+msgid "Dhlp Api Refresh Token"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_delivery_carrier_dhlp_api_refresh_token_exp
+msgid "Dhlp Api Refresh Token Exp"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_ir_attachment_dhlp_stock_picking_id
+msgid "Dhlp Stock Picking"
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:32
+#: model:ir.model.fields,help:delivery_dhlp.field_delivery_carrier_dhlp_base_url
+#, python-format
+msgid "Example: https://api-gw.dhlparcel.nl/.\n"
+"Scheme (https) and trailing slash (/) are required."
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model.fields,field_description:delivery_dhlp.field_stock_picking_dhlp_label_ids
+msgid "Labels"
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/utils.py:123
+#, python-format
+msgid "No label file found. Contact support."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/utils.py:246
+#, python-format
+msgid "One of the following is required:\n"
+"country code\n"
+"postal code\n"
+"city\n"
+"street\n"
+".Please check both, the addresses of your company and the recipient address."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:291
+#, python-format
+msgid "Please specify the number of packages to be shipped."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:147
+#, python-format
+msgid "The shipment Track&Trace is not implemented."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:155
+#, python-format
+msgid "The shipment cancelling is not implemented."
+msgstr ""
+
+#. module: delivery_dhlp
+#: code:addons/delivery_dhlp/models/delivery_dhlp.py:48
+#, python-format
+msgid "The url must contain scheme (for example, `https://.../`)"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model,name:delivery_dhlp.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: delivery_dhlp
+#: model:ir.model,name:delivery_dhlp.model_ir_attachment
+msgid "ir.attachment"
+msgstr ""
+

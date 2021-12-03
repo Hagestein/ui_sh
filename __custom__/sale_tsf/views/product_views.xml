@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  COPYRIGHT
+     Copyright (C) 2018 Neobis
+-->
+
+<odoo>
+    <record id="product_template_form_view_inherit_tsf" model="ir.ui.view">
+        <field name="name">product.template.form.view.inherit.tsf</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='notes']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Website Information" name="website_information">
+                    <group>
+                        <field name="public_categ_ids" widget="many2many_tags"/>
+                        <field name="alternative_product_ids" widget="many2many_tags"/>
+                        <field name="accessory_product_ids" widget="many2many_tags"/>
+                        <field name="website_meta_title"/>
+                        <field name="website_meta_description"/>
+                        <field name="website_meta_keywords"/>
+                        <field name="website_title"/>
+                        <field name="website_description"/>
+                        <field name="website_specifications"/>
+                        <field name="image_2_title"/>
+                        <field name="image_2" widget="image"/>
+                        <field name="image_3_title"/>
+                        <field name="image_3" widget="image"/>
+                        <field name="image_4_title"/>
+                        <field name="image_4" widget="image"/>
+                        <field name="image_5_title"/>
+                        <field name="image_5" widget="image"/>
+                    </group>
+                </page>
+	        </xpath>
+            <xpath expr="//field[@name='list_price']" position="after">
+                <field name="price_incl_vat" widget="monetary"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_supplierinfo_form_view_inherit_tsf" model="ir.ui.view">
+        <field name="name">product.supplierinfo.form.view.inherit.tsf</field>
+        <field name="model">product.supplierinfo</field>
+        <field name="inherit_id" ref="product.product_supplierinfo_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_id']" position="replace"></xpath>
+            <xpath expr="//group/group" position="inside">
+                <field name="product_id" groups="product.group_product_variant"
+                       domain="[('product_tmpl_id', '=', product_tmpl_id)]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

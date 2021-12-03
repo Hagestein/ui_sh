@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  COPYRIGHT
+     Copyright (C) 2018 Neobis
+-->
+<odoo>
+    <!-- import prices wizard view -->
+    <record id="wizard_import_prices_importer_form_view" model="ir.ui.view">
+        <field name="name">wizard.import.prices.importer.form.view</field>
+        <field name="model">import.prices.importer</field>
+        <field name="arch" type="xml">
+            <form string="Upload your xlsx file?">
+                Please upload the prices file. The following extension are acceptable: csv, ods, xls, xlsx, xlsm
+                <group>
+                    <field name="filename" invisible="1"/>
+                    <field name="prices_file" filename="filename"/>
+                </group>
+                <footer>
+                    <button name="action_import" string="_Import" type="object" class="btn-primary"/>
+                    <button string="_Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

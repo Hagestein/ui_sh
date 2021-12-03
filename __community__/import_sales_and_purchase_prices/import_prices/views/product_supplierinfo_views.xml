@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  COPYRIGHT
+     Copyright (C) 2018 Neobis
+-->
+
+<odoo>
+     <act_window
+        id="action_open_import_wizard"
+        name="Import sales and purchase prices"
+        res_model="import.prices.importer"
+        view_type="form"
+        view_mode="form"
+        view_id="wizard_import_prices_importer_form_view"
+        target="new"/>
+
+    <menuitem parent="purchase.menu_procurement_management"
+              id="menu_import_prices"
+              sequence="99"
+              groups="purchase.group_manage_vendor_price"
+              name="Import products prices"
+              action="action_open_import_wizard"  />
+</odoo>

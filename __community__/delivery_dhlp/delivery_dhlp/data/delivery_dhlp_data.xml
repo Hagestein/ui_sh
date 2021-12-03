@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Product -->
+        <record id="product_product_delivery_dhlp" model="product.product">
+            <field name="name">DHL Parcel Product</field>
+            <field name="default_code">Delivery</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="sale_ok" eval="False"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">0.0</field>
+        </record>
+
+        <!-- Carrier -->
+        <record id="delivery_carrier_dhlp" model="delivery.carrier">
+            <field name="name">DHL Parcel</field>
+            <field name="product_id"
+                   ref="delivery_dhlp.product_product_delivery_dhlp"/>
+            <field name="product_type">service</field>
+            <field name="delivery_type">dhlp</field>
+            <field name="dhlp_acc_name">neobis</field>
+            <field name="dhlp_acc_id">06072649</field>
+            <field name="dhlp_base_url">https://api-gw.dhlparcel.nl/</field>
+            <field name="dhlp_api_userid">126f17c6-3af9-47d8-a118-b9ba72b81d1f</field>
+            <field name="dhlp_api_key">ec776feb-39d4-490e-a400-941019305044</field>
+        </record>
+
+    </data>
+</odoo>

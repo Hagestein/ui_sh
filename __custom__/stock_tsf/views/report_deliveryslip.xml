@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+COPYRIGHT
+	Copyright (C) 2018 Neobis
+-->
+<odoo>
+    <template id="report_delivery_document_inherit_stock_tsf" inherit_id="stock.report_delivery_document">
+        <xpath expr="//div[hasclass('page')]" position="after">
+            <div style="page-break-before: always; text-align: center;">
+                <t t-if="o.dhlp_label_ids" t-foreach="o.dhlp_label_ids" t-as="i">
+                    <img t-attf-src="data:image/*;base64,{{i.datas}}" style="max-height: 1000px;"/>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</odoo>
